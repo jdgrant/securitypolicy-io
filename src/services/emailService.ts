@@ -1,3 +1,33 @@
+import nodemailer from 'nodemailer';
+
+const transporter = nodemailer.createTransport({
+  host: import.meta.env.VITE_MAILGUN_SMTP_HOST,
+  port: 587,
+  secure: false,
+  auth: {
+    user: import.meta.env.VITE_MAILGUN_SMTP_USER,
+    pass: import.meta.env.VITE_MAILGUN_SMTP_PASS
+  }
+});
+
+export const sendEmail = async (to: string, subject: string, text: string) => {
+  try {
+    const mailOptions = {
+      from: `Security Policy.io <${import.meta.env.VITE_MAILGUN_SMTP_USER}>`,
+      to,
+      subject,
+      text
+    };
+
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent:', info.messageId);
+    return true;
+  } catch (error) {
+    console.error('Error sending email:', error);
+    throw error;
+  }
+};
+
 export const sendVerificationEmail = async (email: string, verificationToken: string): Promise<void> => {
   // In a real application, this would send an actual email
   // For now, we'll simulate the email sending with a console log
