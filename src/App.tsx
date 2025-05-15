@@ -1,7 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import { Assessment } from './pages/Assessment'
-import { Suspense } from 'react'
+import { Suspense, lazy } from 'react'
+
+// Lazy load the admin test page
+const AdminTest = lazy(() => import('./pages/AdminTest'));
 
 function App() {
   console.log('App component rendering')
@@ -20,6 +23,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/assessment" element={<Assessment />} />
+              <Route path="/admin-test" element={<AdminTest />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Suspense>
