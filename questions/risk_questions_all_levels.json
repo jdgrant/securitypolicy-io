@@ -1,0 +1,1442 @@
+[
+  {
+    "id":1,
+    "category":"Access Control",
+    "planLevel":"Freemium",
+    "questionText":"Do you allow employees to use personal devices to access business data?",
+    "relatedRisk":"Unmanaged devices may introduce malware or lead to data leaks",
+    "possibleImpacts":[
+      "Data Breach",
+      "Compliance Violation",
+      "Operational Disruption"
+    ],
+    "nistCsf":"PR.AC-1, PR.PT-3",
+    "iso27001":"A.6.2.1, A.13.2.1",
+    "soc2Criteria":"CC6.1, CC6.2"
+  },
+  {
+    "id":2,
+    "category":"Access Control",
+    "planLevel":"Freemium",
+    "questionText":"Do all employees have unique usernames and passwords?",
+    "relatedRisk":"Shared credentials reduce accountability and increase insider threats",
+    "possibleImpacts":[
+      "Unauthorized Access",
+      "Fraudulent Activity",
+      "Legal Liability"
+    ],
+    "nistCsf":"PR.AC-1, PR.AC-3",
+    "iso27001":"A.9.2.1, A.9.2.3",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":3,
+    "category":"Data Protection & Availability",
+    "planLevel":"Freemium",
+    "questionText":"Do you regularly back up your business-critical data?",
+    "relatedRisk":"Data loss due to ransomware or system failure",
+    "possibleImpacts":[
+      "Permanent Data Loss",
+      "Business Interruption",
+      "Revenue Loss"
+    ],
+    "nistCsf":"PR.IP-4, PR.IP-9, RC.CO-1",
+    "iso27001":"A.12.3.1, A.17.1.3",
+    "soc2Criteria":"CC7.2, CC8.1"
+  },
+  {
+    "id":4,
+    "category":"Vendor Management",
+    "planLevel":"Freemium",
+    "questionText":"Do you have a list of all third-party vendors who access your systems or data?",
+    "relatedRisk":"Unknown third parties can introduce hidden vulnerabilities",
+    "possibleImpacts":[
+      "Supply Chain Attacks",
+      "Legal Exposure",
+      "Reputational Damage"
+    ],
+    "nistCsf":"ID.BE-1, ID.SC-3",
+    "iso27001":"A.15.1.1, A.15.2.1",
+    "soc2Criteria":"CC9.2"
+  },
+  {
+    "id":5,
+    "category":"Employee Training & Awareness",
+    "planLevel":"Freemium",
+    "questionText":"Have you trained employees on recognizing phishing or scam emails?",
+    "relatedRisk":"Human error is a leading cause of security incidents",
+    "possibleImpacts":[
+      "Credential Theft",
+      "Malware Infection",
+      "Breach of Customer Trust"
+    ],
+    "nistCsf":"PR.AT-1, DE.CM-7",
+    "iso27001":"A.7.2.2, A.12.2.1",
+    "soc2Criteria":"CC7.3"
+  },
+  {
+    "id":6,
+    "category":"Access Control",
+    "planLevel":"Freemium",
+    "questionText":"Do you require strong passwords or multi-factor authentication (MFA)?",
+    "relatedRisk":"Weak authentication increases the chance of unauthorized access",
+    "possibleImpacts":[
+      "Account Takeover",
+      "System Compromise",
+      "Regulatory Fines"
+    ],
+    "nistCsf":"PR.AC-7",
+    "iso27001":"A.9.4.2, A.9.4.3",
+    "soc2Criteria":"CC6.3"
+  },
+  {
+    "id":7,
+    "category":"Physical Security",
+    "planLevel":"Freemium",
+    "questionText":"Do you control who can physically access your office or server areas?",
+    "relatedRisk":"Unauthorized visitors may steal or tamper with devices",
+    "possibleImpacts":[
+      "Equipment Theft",
+      "Data Loss",
+      "Insurance Liability"
+    ],
+    "nistCsf":"PR.AC-2, PR.PT-2",
+    "iso27001":"A.11.1.1, A.11.2.1",
+    "soc2Criteria":"CC6.6"
+  },
+  {
+    "id":8,
+    "category":"Threat Detection",
+    "planLevel":"Freemium",
+    "questionText":"Do you scan your systems for viruses or malware on a regular basis?",
+    "relatedRisk":"Infections can cause downtime or spread to customers",
+    "possibleImpacts":[
+      "Operational Downtime",
+      "Data Corruption",
+      "Loss of Client Trust"
+    ],
+    "nistCsf":"DE.CM-4, PR.IP-1",
+    "iso27001":"A.12.2.1, A.13.2.3",
+    "soc2Criteria":"CC7.1"
+  },
+  {
+    "id":9,
+    "category":"Incident Response",
+    "planLevel":"Freemium",
+    "questionText":"Do you have a formal plan for what to do during a cyberattack or data breach?",
+    "relatedRisk":"Lack of preparedness prolongs recovery and increases damage",
+    "possibleImpacts":[
+      "Prolonged Downtime",
+      "Financial Loss",
+      "Public Relations Crisis"
+    ],
+    "nistCsf":"RS.RP-1, RS.CO-1",
+    "iso27001":"A.16.1.1, A.17.1.2",
+    "soc2Criteria":"CC7.4, CC7.5"
+  },
+  {
+    "id":10,
+    "category":"Monitoring & Logging",
+    "planLevel":"Freemium",
+    "questionText":"Do you keep track of who logs into your systems and when?",
+    "relatedRisk":"Lack of visibility makes it hard to detect malicious activity",
+    "possibleImpacts":[
+      "Delayed Threat Detection",
+      "Internal Fraud",
+      "Audit Failures"
+    ],
+    "nistCsf":"DE.CM-7, PR.PT-1",
+    "iso27001":"A.12.4.1, A.12.4.3",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":11,
+    "category":"Access Control",
+    "planLevel":"Small Business",
+    "questionText":"Do you regularly review user access rights to ensure only the right people have access?",
+    "relatedRisk":"Former employees or misconfigured accounts may retain access",
+    "possibleImpacts":[
+      "Unauthorized Data Access",
+      "Insider Threat",
+      "Legal Noncompliance"
+    ],
+    "nistCsf":"PR.AC-4, PR.AC-6",
+    "iso27001":"A.9.2.5, A.9.2.6",
+    "soc2Criteria":"CC6.2"
+  },
+  {
+    "id":12,
+    "category":"Data Classification",
+    "planLevel":"Small Business",
+    "questionText":"Do you classify and label your business data based on sensitivity?",
+    "relatedRisk":"Unlabeled data may be improperly shared or exposed",
+    "possibleImpacts":[
+      "Exposure of Confidential Information",
+      "Compliance Breach",
+      "Partner Trust Loss"
+    ],
+    "nistCsf":"ID.AM-5, PR.DS-1",
+    "iso27001":"A.8.2.1, A.8.2.2",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":13,
+    "category":"Policy & Legal",
+    "planLevel":"Small Business",
+    "questionText":"Do you require employees to sign confidentiality or acceptable use agreements?",
+    "relatedRisk":"Without policy enforcement, risky behaviors may go unchecked",
+    "possibleImpacts":[
+      "Legal Disputes",
+      "IP Theft",
+      "Reputation Damage"
+    ],
+    "nistCsf":"ID.GV-1, PR.AT-3",
+    "iso27001":"A.7.1.2, A.8.1.3",
+    "soc2Criteria":"CC1.2, CC5.2"
+  },
+  {
+    "id":14,
+    "category":"Business Continuity",
+    "planLevel":"Small Business",
+    "questionText":"Do you test your ability to recover from a system failure or ransomware event?",
+    "relatedRisk":"Recovery may fail or take longer than expected without testing",
+    "possibleImpacts":[
+      "Revenue Loss",
+      "Extended Downtime",
+      "Lost Customer Confidence"
+    ],
+    "nistCsf":"RC.IM-1, RC.RP-1",
+    "iso27001":"A.17.1.3, A.17.2.1",
+    "soc2Criteria":"CC7.4, CC8.2"
+  },
+  {
+    "id":15,
+    "category":"Data Protection",
+    "planLevel":"Small Business",
+    "questionText":"Do you encrypt sensitive customer or financial data at rest and in transit?",
+    "relatedRisk":"Unencrypted data may be intercepted or stolen",
+    "possibleImpacts":[
+      "Data Theft",
+      "PCI\/GDPR Fines",
+      "Breach Notification Costs"
+    ],
+    "nistCsf":"PR.DS-1, PR.DS-2",
+    "iso27001":"A.10.1.1, A.13.2.3",
+    "soc2Criteria":"CC6.1, CC6.3"
+  },
+  {
+    "id":16,
+    "category":"Asset Management",
+    "planLevel":"Small Business",
+    "questionText":"Have you documented which systems and data are most critical to your operations?",
+    "relatedRisk":"Without prioritization, recovery efforts may be misdirected",
+    "possibleImpacts":[
+      "Critical Business Interruption",
+      "Loss of Revenue",
+      "Resource Misallocation"
+    ],
+    "nistCsf":"ID.BE-5, ID.AM-2",
+    "iso27001":"A.8.1.1, A.17.1.1",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":17,
+    "category":"Vulnerability Management",
+    "planLevel":"Small Business",
+    "questionText":"Do you review and patch software vulnerabilities regularly?",
+    "relatedRisk":"Exploited vulnerabilities can lead to remote system takeover",
+    "possibleImpacts":[
+      "System Compromise",
+      "Customer Data Exposure",
+      "Compliance Fines"
+    ],
+    "nistCsf":"PR.IP-12, DE.CM-8",
+    "iso27001":"A.12.6.1, A.14.2.3",
+    "soc2Criteria":"CC7.1, CC7.2"
+  },
+  {
+    "id":18,
+    "category":"Access Control",
+    "planLevel":"Small Business",
+    "questionText":"Do you restrict admin rights to only those who truly need them?",
+    "relatedRisk":"Admin accounts are high-value targets",
+    "possibleImpacts":[
+      "Elevated Privilege Abuse",
+      "System Integrity Loss",
+      "External Breaches"
+    ],
+    "nistCsf":"PR.AC-4, PR.IP-3",
+    "iso27001":"A.9.2.3, A.9.4.4",
+    "soc2Criteria":"CC6.2"
+  },
+  {
+    "id":19,
+    "category":"Monitoring & Logging",
+    "planLevel":"Small Business",
+    "questionText":"Do you log and review system activity for unusual behavior?",
+    "relatedRisk":"Anomalies can go unnoticed without proper monitoring",
+    "possibleImpacts":[
+      "Undetected Data Exfiltration",
+      "Delay in Incident Response",
+      "Audit Failure"
+    ],
+    "nistCsf":"DE.CM-1, DE.CM-6",
+    "iso27001":"A.12.4.1, A.16.1.7",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":20,
+    "category":"Governance & Oversight",
+    "planLevel":"Small Business",
+    "questionText":"Do you have an internal point person responsible for cybersecurity?",
+    "relatedRisk":"Without ownership, issues may go unaddressed",
+    "possibleImpacts":[
+      "Uncoordinated Responses",
+      "Compliance Gaps",
+      "Management Blind Spots"
+    ],
+    "nistCsf":"ID.GV-2, PR.IP-9",
+    "iso27001":"A.6.1.1, A.5.1.1",
+    "soc2Criteria":"CC1.1, CC1.2"
+  },
+  {
+    "id":21,
+    "category":"Employee Training & Awareness",
+    "planLevel":"Small Business",
+    "questionText":"Do you provide security awareness training for all new employees as part of onboarding?",
+    "relatedRisk":"New hires may unintentionally create vulnerabilities without basic security knowledge",
+    "possibleImpacts":[
+      "Policy Violations",
+      "Social Engineering Attacks",
+      "Insider Risk"
+    ],
+    "nistCsf":"PR.AT-2",
+    "iso27001":"A.7.2.2",
+    "soc2Criteria":"CC7.3"
+  },
+  {
+    "id":22,
+    "category":"Vendor Management",
+    "planLevel":"Small Business",
+    "questionText":"Do you evaluate the security practices of third-party vendors before sharing data with them?",
+    "relatedRisk":"Third parties may mishandle or lose sensitive information",
+    "possibleImpacts":[
+      "Third-Party Data Breach",
+      "Reputational Damage",
+      "Regulatory Penalties"
+    ],
+    "nistCsf":"ID.SC-1, ID.SC-4",
+    "iso27001":"A.15.1.1, A.15.1.2",
+    "soc2Criteria":"CC9.2"
+  },
+  {
+    "id":23,
+    "category":"Data Protection",
+    "planLevel":"Small Business",
+    "questionText":"Do you regularly test your data backups to ensure they can be restored correctly?",
+    "relatedRisk":"Backups may fail when needed, leading to data loss",
+    "possibleImpacts":[
+      "Permanent Loss of Critical Data",
+      "Downtime",
+      "Operational Delays"
+    ],
+    "nistCsf":"PR.IP-4, RC.IM-1",
+    "iso27001":"A.12.3.1, A.17.1.3",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":24,
+    "category":"Incident Response",
+    "planLevel":"Small Business",
+    "questionText":"Do you have a documented process for reporting security incidents internally?",
+    "relatedRisk":"Employees may not know how or when to report incidents",
+    "possibleImpacts":[
+      "Delayed Response",
+      "Escalation of Damage",
+      "Missed Regulatory Deadlines"
+    ],
+    "nistCsf":"RS.CO-2",
+    "iso27001":"A.16.1.2, A.16.1.4",
+    "soc2Criteria":"CC7.4"
+  },
+  {
+    "id":25,
+    "category":"Monitoring & Logging",
+    "planLevel":"Small Business",
+    "questionText":"Do you use any automated tools to detect unusual activity on your network or systems?",
+    "relatedRisk":"Suspicious behavior may go unnoticed without real-time monitoring",
+    "possibleImpacts":[
+      "Undetected Breach",
+      "Unauthorized System Access",
+      "Financial Loss"
+    ],
+    "nistCsf":"DE.CM-1, DE.CM-3",
+    "iso27001":"A.12.4.1, A.16.1.7",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":26,
+    "category":"Data Protection",
+    "planLevel":"Small Business",
+    "questionText":"Do you restrict file sharing and cloud storage to approved platforms only?",
+    "relatedRisk":"Unauthorized cloud apps may expose data to external threats",
+    "possibleImpacts":[
+      "Data Leakage",
+      "Shadow IT",
+      "Policy Violations"
+    ],
+    "nistCsf":"PR.DS-5, PR.IP-1",
+    "iso27001":"A.13.2.1, A.13.2.3",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":27,
+    "category":"Governance & Oversight",
+    "planLevel":"Full Plan",
+    "questionText":"Have you formally assigned roles and responsibilities for information security within your organization?",
+    "relatedRisk":"Lack of clear accountability may lead to oversight or delays in response",
+    "possibleImpacts":[
+      "Unresolved Vulnerabilities",
+      "Audit Findings",
+      "Compliance Gaps"
+    ],
+    "nistCsf":"ID.GV-2, PR.IP-9",
+    "iso27001":"A.5.1.1, A.6.1.1",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":28,
+    "category":"Asset Management",
+    "planLevel":"Small Business",
+    "questionText":"Do you keep an inventory of all computers, servers, and network devices your business uses?",
+    "relatedRisk":"Untracked assets may go unpatched or fall outside protection scope",
+    "possibleImpacts":[
+      "Asset Theft",
+      "Compliance Failures",
+      "Data Exposure"
+    ],
+    "nistCsf":"ID.AM-1, ID.AM-2",
+    "iso27001":"A.8.1.1, A.8.1.2",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":29,
+    "category":"Monitoring & Logging",
+    "planLevel":"Full Plan",
+    "questionText":"Do you log changes to configurations or software in production systems?",
+    "relatedRisk":"Unauthorized or accidental changes may go undetected",
+    "possibleImpacts":[
+      "Downtime",
+      "Compliance Audit Findings",
+      "Misconfigurations"
+    ],
+    "nistCsf":"DE.CM-7, PR.IP-3",
+    "iso27001":"A.12.4.1, A.12.1.2",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":30,
+    "category":"Vulnerability Management",
+    "planLevel":"Full Plan",
+    "questionText":"Do you subscribe to any services or feeds to stay informed of new security threats?",
+    "relatedRisk":"Outdated threat intelligence can delay critical protections",
+    "possibleImpacts":[
+      "Zero-day Exploits",
+      "Unmitigated Risk",
+      "Insurance Non-Compliance"
+    ],
+    "nistCsf":"DE.CM-6, ID.RA-2",
+    "iso27001":"A.12.6.1, A.18.2.3",
+    "soc2Criteria":"CC7.1"
+  },
+  {
+    "id":31,
+    "category":"Physical Security",
+    "planLevel":"Small Business",
+    "questionText":"Do you log and review who accesses restricted physical areas of your business? #1",
+    "relatedRisk":"Physical spaces without audit logs can allow undetected access.",
+    "possibleImpacts":[
+      "Unauthorized Entry",
+      "Tampering",
+      "Loss of Assets"
+    ],
+    "nistCsf":"PR.AC-2, PR.PT-2",
+    "iso27001":"A.11.2.4, A.11.1.2",
+    "soc2Criteria":"CC6.6, CC7.2"
+  },
+  {
+    "id":32,
+    "category":"Access Control",
+    "planLevel":"Full Plan",
+    "questionText":"Do you enforce session timeouts or automatic logouts after periods of inactivity? #2",
+    "relatedRisk":"Sessions left open can be exploited for unauthorized access.",
+    "possibleImpacts":[
+      "Account Takeover",
+      "Data Loss",
+      "Compliance Violations"
+    ],
+    "nistCsf":"PR.AC-7",
+    "iso27001":"A.9.4.2",
+    "soc2Criteria":"CC6.3"
+  },
+  {
+    "id":33,
+    "category":"Incident Response",
+    "planLevel":"Full Plan",
+    "questionText":"Have you conducted a tabletop exercise to simulate a security breach scenario? #3",
+    "relatedRisk":"Teams may not be prepared to handle real-world incidents.",
+    "possibleImpacts":[
+      "Slow Incident Response",
+      "Legal Exposure",
+      "Financial Damage"
+    ],
+    "nistCsf":"RS.IM-1",
+    "iso27001":"A.16.1.5",
+    "soc2Criteria":"CC7.4"
+  },
+  {
+    "id":34,
+    "category":"Policy & Legal",
+    "planLevel":"Small Business",
+    "questionText":"Do you have documented policies for acceptable use of company devices and systems? #4",
+    "relatedRisk":"Employees may misuse company systems without clear rules.",
+    "possibleImpacts":[
+      "Policy Violations",
+      "Data Exposure",
+      "Employee Disputes"
+    ],
+    "nistCsf":"PR.AT-3",
+    "iso27001":"A.8.1.3",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":35,
+    "category":"Governance & Oversight",
+    "planLevel":"Full Plan",
+    "questionText":"Does management regularly review your cybersecurity policies and practices? #5",
+    "relatedRisk":"Lack of oversight may lead to outdated or missing policies.",
+    "possibleImpacts":[
+      "Compliance Gaps",
+      "Audit Failures",
+      "Regulatory Fines"
+    ],
+    "nistCsf":"ID.GV-1",
+    "iso27001":"A.5.1.1",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":36,
+    "category":"Vulnerability Management",
+    "planLevel":"Small Business",
+    "questionText":"Do you track which systems are up-to-date with the latest security patches? #6",
+    "relatedRisk":"Unpatched systems are a common entry point for attackers.",
+    "possibleImpacts":[
+      "System Exploitation",
+      "Data Breach",
+      "Service Outages"
+    ],
+    "nistCsf":"PR.IP-12",
+    "iso27001":"A.12.6.1",
+    "soc2Criteria":"CC7.1"
+  },
+  {
+    "id":37,
+    "category":"Employee Training & Awareness",
+    "planLevel":"Full Plan",
+    "questionText":"Do you test employee awareness with simulated phishing campaigns? #7",
+    "relatedRisk":"Employees may fall for phishing attempts without training.",
+    "possibleImpacts":[
+      "Credential Theft",
+      "Malware Infection",
+      "Financial Loss"
+    ],
+    "nistCsf":"PR.AT-1",
+    "iso27001":"A.7.2.2",
+    "soc2Criteria":"CC7.3"
+  },
+  {
+    "id":38,
+    "category":"Asset Management",
+    "planLevel":"Full Plan",
+    "questionText":"Do you tag or label critical assets to ensure traceability? #8",
+    "relatedRisk":"Untagged assets may go unmonitored or unprotected.",
+    "possibleImpacts":[
+      "Device Loss",
+      "Data Leakage",
+      "Incomplete Inventories"
+    ],
+    "nistCsf":"ID.AM-1",
+    "iso27001":"A.8.1.1",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":39,
+    "category":"Monitoring & Logging",
+    "planLevel":"Full Plan",
+    "questionText":"Do you alert system admins automatically when suspicious activity is detected? #9",
+    "relatedRisk":"Missed alerts may allow threats to go undetected.",
+    "possibleImpacts":[
+      "Undetected Attacks",
+      "Extended Breaches",
+      "Data Theft"
+    ],
+    "nistCsf":"DE.CM-1",
+    "iso27001":"A.12.4.1",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":40,
+    "category":"Data Protection",
+    "planLevel":"Full Plan",
+    "questionText":"Do you use encryption for emails containing sensitive information? #10",
+    "relatedRisk":"Unencrypted communication could be intercepted.",
+    "possibleImpacts":[
+      "Data Exposure",
+      "Compliance Violations",
+      "Trust Loss"
+    ],
+    "nistCsf":"PR.DS-2",
+    "iso27001":"A.13.2.3",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":41,
+    "category":"Physical Security",
+    "planLevel":"Small Business",
+    "questionText":"Do you log and review who accesses restricted physical areas of your business? #11",
+    "relatedRisk":"Unauthorized physical access can lead to equipment theft or tampering.",
+    "possibleImpacts":[
+      "Hardware Loss",
+      "Service Downtime",
+      "Legal Risk"
+    ],
+    "nistCsf":"PR.AC-2",
+    "iso27001":"A.11.1.2",
+    "soc2Criteria":"CC6.6"
+  },
+  {
+    "id":42,
+    "category":"Access Control",
+    "planLevel":"Full Plan",
+    "questionText":"Do you enforce session timeouts or automatic logouts after periods of inactivity? #12",
+    "relatedRisk":"Unauthorized access to facilities could compromise physical assets.",
+    "possibleImpacts":[
+      "Equipment Theft",
+      "Data Breach",
+      "Insurance Claims"
+    ],
+    "nistCsf":"PR.AC-2",
+    "iso27001":"A.11.2.3",
+    "soc2Criteria":"CC6.6"
+  },
+  {
+    "id":43,
+    "category":"Incident Response",
+    "planLevel":"Full Plan",
+    "questionText":"Have you conducted a tabletop exercise to simulate a security breach scenario? #13",
+    "relatedRisk":"Without regular updates, antivirus may miss new threats.",
+    "possibleImpacts":[
+      "Malware Outbreaks",
+      "Data Corruption",
+      "Productivity Loss"
+    ],
+    "nistCsf":"PR.IP-1",
+    "iso27001":"A.12.2.1",
+    "soc2Criteria":"CC7.1"
+  },
+  {
+    "id":44,
+    "category":"Policy & Legal",
+    "planLevel":"Small Business",
+    "questionText":"Do you have documented policies for acceptable use of company devices and systems? #14",
+    "relatedRisk":"Lack of a response plan can lead to confusion during crises.",
+    "possibleImpacts":[
+      "Delayed Recovery",
+      "Legal Exposure",
+      "Revenue Loss"
+    ],
+    "nistCsf":"RS.RP-1",
+    "iso27001":"A.16.1.1",
+    "soc2Criteria":"CC7.4"
+  },
+  {
+    "id":45,
+    "category":"Governance & Oversight",
+    "planLevel":"Full Plan",
+    "questionText":"Does management regularly review your cybersecurity policies and practices? #15",
+    "relatedRisk":"Failure to log activity makes it hard to trace security events.",
+    "possibleImpacts":[
+      "Audit Failures",
+      "Prolonged Breach Detection",
+      "Compliance Risk"
+    ],
+    "nistCsf":"DE.CM-7",
+    "iso27001":"A.12.4.1",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":46,
+    "category":"Vulnerability Management",
+    "planLevel":"Small Business",
+    "questionText":"Do you track which systems are up-to-date with the latest security patches? #16",
+    "relatedRisk":"Old or excessive permissions create security blind spots.",
+    "possibleImpacts":[
+      "Insider Threats",
+      "Data Breach",
+      "Operational Abuse"
+    ],
+    "nistCsf":"PR.AC-4",
+    "iso27001":"A.9.2.6",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":47,
+    "category":"Employee Training & Awareness",
+    "planLevel":"Full Plan",
+    "questionText":"Do you test employee awareness with simulated phishing campaigns? #17",
+    "relatedRisk":"Unlabeled data may be overshared or misused.",
+    "possibleImpacts":[
+      "Privacy Breaches",
+      "Data Loss",
+      "Partner Distrust"
+    ],
+    "nistCsf":"PR.DS-1",
+    "iso27001":"A.8.2.1",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":48,
+    "category":"Asset Management",
+    "planLevel":"Full Plan",
+    "questionText":"Do you tag or label critical assets to ensure traceability? #18",
+    "relatedRisk":"No formal agreements increase the chance of misuse or leaks.",
+    "possibleImpacts":[
+      "Legal Disputes",
+      "Confidentiality Breach",
+      "Compliance Violations"
+    ],
+    "nistCsf":"ID.GV-1",
+    "iso27001":"A.7.1.2",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":49,
+    "category":"Monitoring & Logging",
+    "planLevel":"Full Plan",
+    "questionText":"Do you alert system admins automatically when suspicious activity is detected? #19",
+    "relatedRisk":"Recovery testing ensures backups are functional and current.",
+    "possibleImpacts":[
+      "Data Loss",
+      "Ransomware Vulnerability",
+      "Business Downtime"
+    ],
+    "nistCsf":"RC.IM-1",
+    "iso27001":"A.17.1.3",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":50,
+    "category":"Data Protection",
+    "planLevel":"Full Plan",
+    "questionText":"Do you use encryption for emails containing sensitive information? #20",
+    "relatedRisk":"Unencrypted data can be intercepted or leaked.",
+    "possibleImpacts":[
+      "Regulatory Fines",
+      "Identity Theft",
+      "Reputational Damage"
+    ],
+    "nistCsf":"PR.DS-2",
+    "iso27001":"A.10.1.1",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":51,
+    "category":"Physical Security",
+    "planLevel":"Small Business",
+    "questionText":"Do you log and review who accesses restricted physical areas of your business? #21",
+    "relatedRisk":"Lack of asset prioritization can delay disaster recovery.",
+    "possibleImpacts":[
+      "Misallocation of Resources",
+      "Loss of Critical Services",
+      "Recovery Delays"
+    ],
+    "nistCsf":"ID.BE-5",
+    "iso27001":"A.8.1.1",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":52,
+    "category":"Access Control",
+    "planLevel":"Full Plan",
+    "questionText":"Do you enforce session timeouts or automatic logouts after periods of inactivity? #22",
+    "relatedRisk":"Unpatched software can be exploited by attackers.",
+    "possibleImpacts":[
+      "System Breach",
+      "Customer Data Exposure",
+      "Legal Liability"
+    ],
+    "nistCsf":"PR.IP-12",
+    "iso27001":"A.12.6.1",
+    "soc2Criteria":"CC7.1"
+  },
+  {
+    "id":53,
+    "category":"Incident Response",
+    "planLevel":"Full Plan",
+    "questionText":"Have you conducted a tabletop exercise to simulate a security breach scenario? #23",
+    "relatedRisk":"Overprivileged accounts present high-risk targets.",
+    "possibleImpacts":[
+      "Privilege Escalation",
+      "System Misuse",
+      "Insider Breach"
+    ],
+    "nistCsf":"PR.AC-4",
+    "iso27001":"A.9.4.4",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":54,
+    "category":"Policy & Legal",
+    "planLevel":"Small Business",
+    "questionText":"Do you have documented policies for acceptable use of company devices and systems? #24",
+    "relatedRisk":"Unmonitored systems can hide signs of compromise.",
+    "possibleImpacts":[
+      "Extended Breaches",
+      "Data Exfiltration",
+      "Audit Failures"
+    ],
+    "nistCsf":"DE.CM-6",
+    "iso27001":"A.16.1.7",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":55,
+    "category":"Governance & Oversight",
+    "planLevel":"Full Plan",
+    "questionText":"Does management regularly review your cybersecurity policies and practices? #25",
+    "relatedRisk":"No one managing cybersecurity can leave threats unaddressed.",
+    "possibleImpacts":[
+      "Security Drift",
+      "Gaps in Defense",
+      "Strategic Risk"
+    ],
+    "nistCsf":"ID.GV-2",
+    "iso27001":"A.6.1.1",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":56,
+    "category":"Vulnerability Management",
+    "planLevel":"Small Business",
+    "questionText":"Do you track which systems are up-to-date with the latest security patches? #26",
+    "relatedRisk":"Unpatched systems may expose the organization to known threats.",
+    "possibleImpacts":[
+      "Exploitation",
+      "Downtime",
+      "Customer Impact"
+    ],
+    "nistCsf":"PR.IP-12, DE.CM-8",
+    "iso27001":"A.12.6.1, A.14.2.3",
+    "soc2Criteria":"CC7.1, CC7.2"
+  },
+  {
+    "id":57,
+    "category":"Employee Training & Awareness",
+    "planLevel":"Full Plan",
+    "questionText":"Do you test employee awareness with simulated phishing campaigns? #27",
+    "relatedRisk":"Employees unaware of phishing threats are more likely to be tricked.",
+    "possibleImpacts":[
+      "Credential Theft",
+      "Malware Infections",
+      "Customer Data Loss"
+    ],
+    "nistCsf":"PR.AT-2",
+    "iso27001":"A.7.2.2",
+    "soc2Criteria":"CC7.3"
+  },
+  {
+    "id":58,
+    "category":"Asset Management",
+    "planLevel":"Full Plan",
+    "questionText":"Do you tag or label critical assets to ensure traceability? #28",
+    "relatedRisk":"Lack of asset tagging may lead to unmanaged devices and shadow IT.",
+    "possibleImpacts":[
+      "Untracked Devices",
+      "Data Breaches",
+      "Audit Failures"
+    ],
+    "nistCsf":"ID.AM-1",
+    "iso27001":"A.8.1.1",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":59,
+    "category":"Monitoring & Logging",
+    "planLevel":"Full Plan",
+    "questionText":"Do you alert system admins automatically when suspicious activity is detected? #29",
+    "relatedRisk":"Without alerts, administrators may miss security incidents.",
+    "possibleImpacts":[
+      "Delayed Response",
+      "Increased Damage",
+      "Non-compliance"
+    ],
+    "nistCsf":"DE.CM-1",
+    "iso27001":"A.12.4.1",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":60,
+    "category":"Data Protection",
+    "planLevel":"Full Plan",
+    "questionText":"Do you use encryption for emails containing sensitive information? #30",
+    "relatedRisk":"Unencrypted communications can be intercepted or manipulated.",
+    "possibleImpacts":[
+      "Sensitive Data Exposure",
+      "Compliance Violations",
+      "Loss of Trust"
+    ],
+    "nistCsf":"PR.DS-2",
+    "iso27001":"A.13.2.3",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":61,
+    "category":"Physical Security",
+    "planLevel":"Small Business",
+    "questionText":"Do you log and review who accesses restricted physical areas of your business? #31",
+    "relatedRisk":"Insufficient logging makes it difficult to identify unauthorized access.",
+    "possibleImpacts":[
+      "Undetected Breaches",
+      "Incomplete Investigations",
+      "Audit Risk"
+    ],
+    "nistCsf":"DE.CM-7",
+    "iso27001":"A.12.4.1",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":62,
+    "category":"Access Control",
+    "planLevel":"Full Plan",
+    "questionText":"Do you enforce session timeouts or automatic logouts after periods of inactivity? #32",
+    "relatedRisk":"Sessions left active increase the chance of unauthorized access.",
+    "possibleImpacts":[
+      "Data Breaches",
+      "Account Hijacking",
+      "Legal Consequences"
+    ],
+    "nistCsf":"PR.AC-7",
+    "iso27001":"A.9.4.2",
+    "soc2Criteria":"CC6.3"
+  },
+  {
+    "id":63,
+    "category":"Incident Response",
+    "planLevel":"Full Plan",
+    "questionText":"Have you conducted a tabletop exercise to simulate a security breach scenario? #33",
+    "relatedRisk":"Without practice, teams may be unprepared to respond to real incidents.",
+    "possibleImpacts":[
+      "Increased Damage",
+      "Delayed Recovery",
+      "Financial Loss"
+    ],
+    "nistCsf":"RS.IM-1",
+    "iso27001":"A.16.1.5",
+    "soc2Criteria":"CC7.4"
+  },
+  {
+    "id":64,
+    "category":"Policy & Legal",
+    "planLevel":"Small Business",
+    "questionText":"Do you have documented policies for acceptable use of company devices and systems? #34",
+    "relatedRisk":"No acceptable use policy may lead to risky behavior by staff.",
+    "possibleImpacts":[
+      "Inappropriate Usage",
+      "Legal Liability",
+      "Data Misuse"
+    ],
+    "nistCsf":"PR.AT-3",
+    "iso27001":"A.8.1.3",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":65,
+    "category":"Governance & Oversight",
+    "planLevel":"Full Plan",
+    "questionText":"Does management regularly review your cybersecurity policies and practices? #35",
+    "relatedRisk":"No oversight on cybersecurity practices increases organizational risk.",
+    "possibleImpacts":[
+      "Control Gaps",
+      "Compliance Issues",
+      "Strategic Failures"
+    ],
+    "nistCsf":"ID.GV-1",
+    "iso27001":"A.5.1.1",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":66,
+    "category":"Vulnerability Management",
+    "planLevel":"Small Business",
+    "questionText":"Do you track which systems are up-to-date with the latest security patches? #36",
+    "relatedRisk":"Outdated software increases vulnerability to known exploits.",
+    "possibleImpacts":[
+      "Malware Infection",
+      "System Compromise",
+      "Downtime"
+    ],
+    "nistCsf":"PR.IP-1, PR.IP-12, PR.MA-1",
+    "iso27001":"A.12.6.1, A.14.2.2",
+    "soc2Criteria":"CC7.1, CC7.2"
+  },
+  {
+    "id":67,
+    "category":"Employee Training & Awareness",
+    "planLevel":"Full Plan",
+    "questionText":"Do you test employee awareness with simulated phishing campaigns? #37",
+    "relatedRisk":"Repeated phishing tests help gauge and improve staff resilience.",
+    "possibleImpacts":[
+      "Improved Awareness",
+      "Reduced Phishing Risk",
+      "Fewer Incidents"
+    ],
+    "nistCsf":"PR.AT-1",
+    "iso27001":"A.7.2.2",
+    "soc2Criteria":"CC7.3"
+  },
+  {
+    "id":68,
+    "category":"Asset Management",
+    "planLevel":"Full Plan",
+    "questionText":"Do you tag or label critical assets to ensure traceability? #38",
+    "relatedRisk":"Lack of labeling may cause mishandling of sensitive assets.",
+    "possibleImpacts":[
+      "Data Loss",
+      "Asset Theft",
+      "Security Oversight"
+    ],
+    "nistCsf":"ID.AM-2",
+    "iso27001":"A.8.1.1",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":69,
+    "category":"Monitoring & Logging",
+    "planLevel":"Full Plan",
+    "questionText":"Do you alert system admins automatically when suspicious activity is detected? #39",
+    "relatedRisk":"Critical alerts help identify abnormal behavior in real time.",
+    "possibleImpacts":[
+      "Rapid Response",
+      "Mitigated Damage",
+      "Improved Uptime"
+    ],
+    "nistCsf":"DE.CM-3",
+    "iso27001":"A.12.4.1",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":70,
+    "category":"Data Protection",
+    "planLevel":"Full Plan",
+    "questionText":"Do you use encryption for emails containing sensitive information? #40",
+    "relatedRisk":"Email encryption helps prevent unauthorized reading of content.",
+    "possibleImpacts":[
+      "Confidentiality Protection",
+      "Legal Compliance",
+      "Customer Trust"
+    ],
+    "nistCsf":"PR.DS-2",
+    "iso27001":"A.13.2.3",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":71,
+    "category":"Physical Security",
+    "planLevel":"Small Business",
+    "questionText":"Do you log and review who accesses restricted physical areas of your business? #41",
+    "relatedRisk":"Failure to audit physical access can lead to undetected breaches.",
+    "possibleImpacts":[
+      "Asset Theft",
+      "System Tampering",
+      "Audit Findings"
+    ],
+    "nistCsf":"PR.AC-2",
+    "iso27001":"A.11.2.3",
+    "soc2Criteria":"CC6.6"
+  },
+  {
+    "id":72,
+    "category":"Access Control",
+    "planLevel":"Full Plan",
+    "questionText":"Do you enforce session timeouts or automatic logouts after periods of inactivity? #42",
+    "relatedRisk":"Sessions that don't auto-terminate pose security risk.",
+    "possibleImpacts":[
+      "Unauthorized Access",
+      "Sensitive Data Exposure",
+      "Legal Risk"
+    ],
+    "nistCsf":"PR.AC-7",
+    "iso27001":"A.9.4.2",
+    "soc2Criteria":"CC6.3"
+  },
+  {
+    "id":73,
+    "category":"Incident Response",
+    "planLevel":"Full Plan",
+    "questionText":"Have you conducted a tabletop exercise to simulate a security breach scenario? #43",
+    "relatedRisk":"Simulation exercises reveal gaps in response capabilities.",
+    "possibleImpacts":[
+      "Enhanced Preparedness",
+      "Reduced Downtime",
+      "Better Compliance"
+    ],
+    "nistCsf":"RS.IM-1",
+    "iso27001":"A.16.1.5",
+    "soc2Criteria":"CC7.4"
+  },
+  {
+    "id":74,
+    "category":"Policy & Legal",
+    "planLevel":"Small Business",
+    "questionText":"Do you have documented policies for acceptable use of company devices and systems? #44",
+    "relatedRisk":"No acceptable use policy can lead to misuse of IT systems.",
+    "possibleImpacts":[
+      "Reputational Damage",
+      "Misuse of Data",
+      "Employment Disputes"
+    ],
+    "nistCsf":"ID.GV-1",
+    "iso27001":"A.8.1.3",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":75,
+    "category":"Governance & Oversight",
+    "planLevel":"Full Plan",
+    "questionText":"Does management regularly review your cybersecurity policies and practices? #45",
+    "relatedRisk":"Without leadership review, security gaps may go unaddressed.",
+    "possibleImpacts":[
+      "Stale Policies",
+      "Ineffective Controls",
+      "Failed Audits"
+    ],
+    "nistCsf":"ID.GV-1",
+    "iso27001":"A.5.1.1",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":76,
+    "category":"Vulnerability Management",
+    "planLevel":"Small Business",
+    "questionText":"Do you track which systems are up-to-date with the latest security patches? #46",
+    "relatedRisk":"Outdated systems may contain exploitable vulnerabilities.",
+    "possibleImpacts":[
+      "Malware Infections",
+      "System Compromise",
+      "Data Breach"
+    ],
+    "nistCsf":"PR.IP-12, DE.CM-8",
+    "iso27001":"A.12.6.1, A.12.5.1",
+    "soc2Criteria":"CC7.1, CC7.2"
+  },
+  {
+    "id":77,
+    "category":"Employee Training & Awareness",
+    "planLevel":"Full Plan",
+    "questionText":"Do you test employee awareness with simulated phishing campaigns? #47",
+    "relatedRisk":"Untrained staff may fall for phishing or social engineering.",
+    "possibleImpacts":[
+      "Credential Theft",
+      "Malware Spread",
+      "Customer Data Exposure"
+    ],
+    "nistCsf":"PR.AT-1, PR.AT-2",
+    "iso27001":"A.7.2.2, A.12.2.1",
+    "soc2Criteria":"CC7.3, CC1.2"
+  },
+  {
+    "id":78,
+    "category":"Asset Management",
+    "planLevel":"Full Plan",
+    "questionText":"Do you tag or label critical assets to ensure traceability? #48",
+    "relatedRisk":"Unlabeled or untracked assets may bypass security controls.",
+    "possibleImpacts":[
+      "Lost Devices",
+      "Shadow IT",
+      "Audit Failures"
+    ],
+    "nistCsf":"ID.AM-1, ID.AM-2",
+    "iso27001":"A.8.1.1, A.8.1.2",
+    "soc2Criteria":"CC8.1, CC6.1"
+  },
+  {
+    "id":79,
+    "category":"Monitoring & Logging",
+    "planLevel":"Full Plan",
+    "questionText":"Do you alert system admins automatically when suspicious activity is detected? #49",
+    "relatedRisk":"Without real-time alerts, threats may go undetected.",
+    "possibleImpacts":[
+      "Prolonged Exposure",
+      "Data Theft",
+      "System Downtime"
+    ],
+    "nistCsf":"DE.CM-1, DE.CM-3",
+    "iso27001":"A.12.4.1, A.16.1.7",
+    "soc2Criteria":"CC7.2, CC7.4"
+  },
+  {
+    "id":80,
+    "category":"Data Protection",
+    "planLevel":"Full Plan",
+    "questionText":"Do you use encryption for emails containing sensitive information? #50",
+    "relatedRisk":"Emails with sensitive data may be intercepted if not encrypted.",
+    "possibleImpacts":[
+      "Data Leakage",
+      "Compliance Penalties",
+      "Customer Distrust"
+    ],
+    "nistCsf":"PR.DS-2, PR.DS-5",
+    "iso27001":"A.13.2.3, A.10.1.1",
+    "soc2Criteria":"CC6.1, CC6.3"
+  },
+  {
+    "id":76,
+    "category":"Governance & Oversight",
+    "planLevel":"Full Plan",
+    "questionText":"Do you have a policy that defines how your company manages cybersecurity risks?",
+    "relatedRisk":"Absence of formal governance over security practices",
+    "possibleImpacts":[
+      "Compliance failure, operational chaos, audit delays"
+    ],
+    "nistCsf":"ID.RM-1",
+    "iso27001":"A.5.1.1",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":77,
+    "category":"Risk Assessment",
+    "planLevel":"Full Plan",
+    "questionText":"Have you identified the main cybersecurity threats your business might face, like phishing, data loss, or ransomware?",
+    "relatedRisk":"Unidentified threats lead to unprepared defenses",
+    "possibleImpacts":[
+      "Data breach, financial fraud, business interruption"
+    ],
+    "nistCsf":"ID.RA-1",
+    "iso27001":"A.6.1.1",
+    "soc2Criteria":"CC3.2"
+  },
+  {
+    "id":78,
+    "category":"Risk Assessment",
+    "planLevel":"Full Plan",
+    "questionText":"Do you consider how cyber risks could impact your business partners or customers?",
+    "relatedRisk":"Overlooking downstream or supply chain impacts",
+    "possibleImpacts":[
+      "Contract breaches, client losses, legal risk"
+    ],
+    "nistCsf":"ID.RA-3",
+    "iso27001":"A.15.1.1",
+    "soc2Criteria":"CC9.2"
+  },
+  {
+    "id":79,
+    "category":"Data Protection",
+    "planLevel":"Small Business",
+    "questionText":"Do you regularly test whether your backups work and can be restored?",
+    "relatedRisk":"Backups may be useless if they don\u2019t work in an emergency",
+    "possibleImpacts":[
+      "Permanent data loss, extended downtime, loss of customer trust"
+    ],
+    "nistCsf":"RC.IM-1",
+    "iso27001":"A.17.1.3",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":80,
+    "category":"Threat Detection",
+    "planLevel":"Full Plan",
+    "questionText":"Do you have a reliable way to detect if sensitive data is being accessed or copied without permission?",
+    "relatedRisk":"Undetected data theft or insider access",
+    "possibleImpacts":[
+      "Regulatory fines, customer loss, reputational damage"
+    ],
+    "nistCsf":"DE.DP-1",
+    "iso27001":"A.12.4.1",
+    "soc2Criteria":"CC7.2"
+  },
+  {
+    "id":81,
+    "category":"Incident Response",
+    "planLevel":"Full Plan",
+    "questionText":"If something suspicious happens, like unusual logins or system errors, do you investigate it to understand what went wrong?",
+    "relatedRisk":"Ignored warning signs could signal an attack",
+    "possibleImpacts":[
+      "Ongoing breach, customer harm, legal claims"
+    ],
+    "nistCsf":"RS.AN-1",
+    "iso27001":"A.16.1.7",
+    "soc2Criteria":"CC7.4"
+  },
+  {
+    "id":82,
+    "category":"Incident Response",
+    "planLevel":"Full Plan",
+    "questionText":"After a security incident, do you make changes to prevent the same thing from happening again?",
+    "relatedRisk":"Repeat vulnerabilities due to lack of follow-up",
+    "possibleImpacts":[
+      "Recurring threats, financial loss, compliance failure"
+    ],
+    "nistCsf":"RS.MI-1",
+    "iso27001":"A.16.1.5",
+    "soc2Criteria":"CC7.5"
+  },
+  {
+    "id":83,
+    "category":"Business Continuity",
+    "planLevel":"Small Business",
+    "questionText":"Do you have a basic recovery plan to help your business bounce back after a cyberattack or IT failure?",
+    "relatedRisk":"No recovery structure leads to prolonged disruption",
+    "possibleImpacts":[
+      "Missed contracts, staff downtime, revenue loss"
+    ],
+    "nistCsf":"RC.RP-1",
+    "iso27001":"A.17.1.1",
+    "soc2Criteria":"CC8.1"
+  },
+  {
+    "id":84,
+    "category":"Legal & Regulatory",
+    "planLevel":"Full Plan",
+    "questionText":"Do you have a way to get in touch with law enforcement or a legal advisor if your business is targeted in a cybercrime?",
+    "relatedRisk":"Missed legal obligations or delayed response",
+    "possibleImpacts":[
+      "Fines, investigation delays, escalation of threat"
+    ],
+    "nistCsf":"RS.CO-2",
+    "iso27001":"A.6.1.5",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":85,
+    "category":"System Security",
+    "planLevel":"Small Business",
+    "questionText":"Do you make sure only approved software is installed on your company devices?",
+    "relatedRisk":"Uncontrolled installations can introduce malware or data leakage",
+    "possibleImpacts":[
+      "System compromise, lost data, compliance issues"
+    ],
+    "nistCsf":"PR.IP-1",
+    "iso27001":"A.12.5.1",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":86,
+    "category":"Governance & Oversight",
+    "planLevel":"Small Business",
+    "questionText":"Are your security policies reviewed at least once a year or when things change in your business?",
+    "relatedRisk":"Outdated rules don\u2019t match current threats",
+    "possibleImpacts":[
+      "Policy gaps, audit findings, poor response readiness"
+    ],
+    "nistCsf":"ID.GV-1",
+    "iso27001":"A.5.1.2",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":87,
+    "category":"Legal & Regulatory",
+    "planLevel":"Full Plan",
+    "questionText":"Do you check if your business is following relevant laws and regulations that apply to data privacy or cybersecurity?",
+    "relatedRisk":"Noncompliance with industry rules or regulations",
+    "possibleImpacts":[
+      "Legal fines, lawsuits, blocked contracts"
+    ],
+    "nistCsf":"ID.RA-1",
+    "iso27001":"A.18.1.3",
+    "soc2Criteria":"CC1.2"
+  },
+  {
+    "id":88,
+    "category":"Legal & Regulatory",
+    "planLevel":"Full Plan",
+    "questionText":"Are your business documents, software, and brand assets protected from theft or misuse by others?",
+    "relatedRisk":"Intellectual property may be stolen or misused",
+    "possibleImpacts":[
+      "Competitive loss, legal disputes, revenue impact"
+    ],
+    "nistCsf":"PR.DS-6",
+    "iso27001":"A.18.1.4",
+    "soc2Criteria":"CC6.1"
+  },
+  {
+    "id":89,
+    "category":"Incident Response",
+    "planLevel":"Full Plan",
+    "questionText":"After an incident, do you document what happened and what you did about it?",
+    "relatedRisk":"Lack of documentation limits learning and compliance evidence",
+    "possibleImpacts":[
+      "Repeat mistakes, audit failures, insurer disputes"
+    ],
+    "nistCsf":"RS.IM-1",
+    "iso27001":"A.16.1.7",
+    "soc2Criteria":"CC7.5"
+  },
+  {
+    "id":90,
+    "category":"Risk Assessment",
+    "planLevel":"Full Plan",
+    "questionText":"Do you decide how to prioritize cybersecurity risks based on how likely and severe they are?",
+    "relatedRisk":"Treating all risks equally wastes time and leaves big threats unresolved",
+    "possibleImpacts":[
+      "Misallocated resources, poor response readiness, strategic failure"
+    ],
+    "nistCsf":"ID.RM-1",
+    "iso27001":"A.6.1.2",
+    "soc2Criteria":"CC3.3"
+  },
+  {
+    "id":96,
+    "category":"Governance & Risk Strategy",
+    "planLevel":"Full Plan",
+    "questionText":"Do you make risk-based decisions when prioritizing projects or allocating resources?",
+    "relatedRisk":"Lack of alignment between business priorities and risk exposure",
+    "possibleImpacts":[
+      "Wasted resources",
+      "unmanaged critical risks",
+      "strategic misalignment"
+    ],
+    "nistCsf":"ID.RA-5",
+    "iso27001":"A.6.1.2",
+    "soc2Criteria":"CC3.2"
+  },
+  {
+    "id":97,
+    "category":"Detection & Monitoring",
+    "planLevel":"Full Plan",
+    "questionText":"Do you have automated alerts or thresholds to detect unusual system behavior or possible attacks?",
+    "relatedRisk":"Delayed detection of incidents increases damage and response time",
+    "possibleImpacts":[
+      "Longer system outages",
+      "unreported data breaches",
+      "reputational damage"
+    ],
+    "nistCsf":"DE.DP-4",
+    "iso27001":"A.12.4.1",
+    "soc2Criteria":"CC7.3"
+  },
+  {
+    "id":98,
+    "category":"Response & Lessons Learned",
+    "planLevel":"Full Plan",
+    "questionText":"After a security incident, do you conduct a formal review to identify lessons learned and adjust your response plan?",
+    "relatedRisk":"Repeating the same mistakes due to lack of continuous improvement",
+    "possibleImpacts":[
+      "Recurring outages",
+      "audit findings",
+      "loss of trust"
+    ],
+    "nistCsf":"RS.MI-1",
+    "iso27001":"A.16.1.6",
+    "soc2Criteria":"CC7.5"
+  }
+]

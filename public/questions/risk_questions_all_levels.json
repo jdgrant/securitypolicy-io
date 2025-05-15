@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "category": "Access Control",
+    "planLevel": "Freemium",
+    "questionText": "Do you allow employees to use personal devices to access business data?",
+    "relatedRisk": "Unmanaged devices may introduce malware or lead to data leaks",
+    "possibleImpacts": [
+      "Data Breach",
+      "Compliance Violation",
+      "Operational Disruption"
+    ],
+    "nistCsf": "PR.AC-1, PR.PT-3",
+    "iso27001": "A.6.2.1, A.13.2.1",
+    "soc2Criteria": "CC6.1, CC6.2"
+  },
+  {
+    "id": 2,
+    "category": "Access Control",
+    "planLevel": "Freemium",
+    "questionText": "Do all employees have unique usernames and passwords?",
+    "relatedRisk": "Shared credentials reduce accountability and increase insider threats",
+    "possibleImpacts": [
+      "Unauthorized Access",
+      "Fraudulent Activity",
+      "Legal Liability"
+    ],
+    "nistCsf": "PR.AC-1, PR.AC-3",
+    "iso27001": "A.9.2.1, A.9.2.3",
+    "soc2Criteria": "CC6.1"
+  },
+  {
+    "id": 3,
+    "category": "Data Protection & Availability",
+    "planLevel": "Freemium",
+    "questionText": "Do you regularly back up your business-critical data?",
+    "relatedRisk": "Data loss due to ransomware or system failure",
+    "possibleImpacts": [
+      "Permanent Data Loss",
+      "Business Interruption",
+      "Revenue Loss"
+    ],
+    "nistCsf": "PR.IP-4, PR.IP-9, RC.CO-1",
+    "iso27001": "A.12.3.1, A.17.1.3",
+    "soc2Criteria": "CC7.2, CC8.1"
+  },
+  {
+    "id": 4,
+    "category": "Vendor Management",
+    "planLevel": "Freemium",
+    "questionText": "Do you have a list of all third-party vendors who access your systems or data?",
+    "relatedRisk": "Unknown third parties can introduce hidden vulnerabilities",
+    "possibleImpacts": [
+      "Supply Chain Attacks",
+      "Legal Exposure",
+      "Reputational Damage"
+    ],
+    "nistCsf": "ID.BE-1, ID.SC-3",
+    "iso27001": "A.15.1.1, A.15.2.1",
+    "soc2Criteria": "CC9.2"
+  },
+  {
+    "id": 5,
+    "category": "Employee Training & Awareness",
+    "planLevel": "Freemium",
+    "questionText": "Have you trained employees on recognizing phishing or scam emails?",
+    "relatedRisk": "Human error is a leading cause of security incidents",
+    "possibleImpacts": [
+      "Credential Theft",
+      "Malware Infection",
+      "Breach of Customer Trust"
+    ],
+    "nistCsf": "PR.AT-1, DE.CM-7",
+    "iso27001": "A.7.2.2, A.12.2.1",
+    "soc2Criteria": "CC7.3"
+  },
+  {
+    "id": 6,
+    "category": "Access Control",
+    "planLevel": "Freemium",
+    "questionText": "Do you require strong passwords or multi-factor authentication (MFA)?",
+    "relatedRisk": "Weak authentication increases the chance of unauthorized access",
+    "possibleImpacts": [
+      "Account Takeover",
+      "System Compromise",
+      "Regulatory Fines"
+    ],
+    "nistCsf": "PR.AC-7",
+    "iso27001": "A.9.4.2, A.9.4.3",
+    "soc2Criteria": "CC6.3"
+  },
+  {
+    "id": 7,
+    "category": "Physical Security",
+    "planLevel": "Freemium",
+    "questionText": "Do you control who can physically access your office or server areas?",
+    "relatedRisk": "Unauthorized visitors may steal or tamper with devices",
+    "possibleImpacts": [
+      "Equipment Theft",
+      "Data Loss",
+      "Insurance Liability"
+    ],
+    "nistCsf": "PR.AC-2, PR.PT-2",
+    "iso27001": "A.11.1.1, A.11.2.1",
+    "soc2Criteria": "CC6.6"
+  },
+  {
+    "id": 8,
+    "category": "Threat Detection",
+    "planLevel": "Freemium",
+    "questionText": "Do you scan your systems for viruses or malware on a regular basis?",
+    "relatedRisk": "Infections can cause downtime or spread to customers",
+    "possibleImpacts": [
+      "Operational Downtime",
+      "Data Corruption",
+      "Loss of Client Trust"
+    ],
+    "nistCsf": "DE.CM-4, PR.IP-1",
+    "iso27001": "A.12.2.1, A.13.2.3",
+    "soc2Criteria": "CC7.1"
+  },
+  {
+    "id": 9,
+    "category": "Incident Response",
+    "planLevel": "Freemium",
+    "questionText": "Do you have a formal plan for what to do during a cyberattack or data breach?",
+    "relatedRisk": "Lack of preparedness prolongs recovery and increases damage",
+    "possibleImpacts": [
+      "Prolonged Downtime",
+      "Financial Loss",
+      "Public Relations Crisis"
+    ],
+    "nistCsf": "RS.RP-1, RS.CO-1",
+    "iso27001": "A.16.1.1, A.17.1.2",
+    "soc2Criteria": "CC7.4, CC7.5"
+  },
+  {
+    "id": 10,
+    "category": "Monitoring & Logging",
+    "planLevel": "Freemium",
+    "questionText": "Do you keep track of who logs into your systems and when?",
+    "relatedRisk": "Lack of visibility makes it hard to detect malicious activity",
+    "possibleImpacts": [
+      "Delayed Threat Detection",
+      "Internal Fraud",
+      "Audit Failures"
+    ],
+    "nistCsf": "DE.CM-7, PR.PT-1",
+    "iso27001": "A.12.4.1, A.12.4.3",
+    "soc2Criteria": "CC7.2"
+  }
+] 
