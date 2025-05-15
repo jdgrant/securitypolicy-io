@@ -1,4 +1,4 @@
-const API_URL = '/api';
+const API_URL = '/.netlify/functions';
 
 // Simple email service for development
 export const sendEmail = async (to: string, subject: string, text: string) => {
