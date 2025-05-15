@@ -4,9 +4,9 @@ A web application for conducting security assessments and generating policy reco
 
 ## Deployment
 
-This application is automatically deployed to Vercel when changes are pushed to the main branch.
+This application is automatically deployed to Netlify when changes are pushed to the main branch.
 
-Production URL: https://securitypolicy-m6r4llnrz-jdgrants-projects.vercel.app
+Production URL: [Netlify Deployment] 🚀
 
 ## Features
 
