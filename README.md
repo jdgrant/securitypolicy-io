@@ -2,6 +2,12 @@
 
 A web application for conducting security assessments and generating policy recommendations.
 
+## Deployment
+
+This application is automatically deployed to Vercel when changes are pushed to the main branch.
+
+Production URL: https://securitypolicy-m6r4llnrz-jdgrants-projects.vercel.app
+
 ## Features
 
 - Interactive security assessment questionnaire
