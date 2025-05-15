@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import sql from 'mssql';
 
 interface TestResult {
   success: boolean;
@@ -16,7 +15,7 @@ const AdminTest: React.FC = () => {
   const testDatabaseConnection = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('/api/test-db');
+      const response = await fetch('/.netlify/functions/test-db');
       const data = await response.json();
       setDbTestResult({
         success: data.success,
@@ -44,7 +43,7 @@ const AdminTest: React.FC = () => {
 
     setIsLoading(true);
     try {
-      const response = await fetch('/api/test-email', {
+      const response = await fetch('/.netlify/functions/test-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
