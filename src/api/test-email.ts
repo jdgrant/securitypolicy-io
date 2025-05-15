@@ -57,13 +57,13 @@ const handler: Handler = async (event, context) => {
 
     // Send test email
     await transporter.sendMail({
-      from: 'SecurityPolicy.io <noreply@securitypolicy.io>',
+      from: 'SecurityPlan.io <noreply@securityplan.io>',
       to: email,
-      subject: 'Test Email from SecurityPolicy.io',
-      text: 'This is a test email from SecurityPolicy.io. If you received this, the email functionality is working correctly.',
+      subject: 'Test Email from SecurityPlan.io',
+      text: 'This is a test email from SecurityPlan.io. If you received this, the email functionality is working correctly.',
       html: `
-        <h1>Test Email from SecurityPolicy.io</h1>
-        <p>This is a test email from SecurityPolicy.io.</p>
+        <h1>Test Email from SecurityPlan.io</h1>
+        <p>This is a test email from SecurityPlan.io.</p>
         <p>If you received this, the email functionality is working correctly.</p>
         <hr>
         <p style="color: #666; font-size: 12px;">This is an automated message, please do not reply.</p>
