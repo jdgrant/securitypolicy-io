@@ -4,6 +4,7 @@ import { Login } from './pages/Login'
 import { Dashboard } from './pages/Dashboard'
 import { Assessment } from './pages/Assessment'
 import { ResetPassword } from './pages/ResetPassword'
+import { AdminPortal } from './pages/AdminPortal'
 import { Suspense, lazy } from 'react'
 import type { ReactNode } from 'react'
 import { Nav } from './components/Nav'
@@ -39,6 +40,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/reset-password" element={<ResetPassword />} />
               <Route path="/assessment" element={<Assessment />} />
+              <Route path="/admin" element={<AdminPortal />} />
               <Route
                 path="/dashboard"
                 element={
