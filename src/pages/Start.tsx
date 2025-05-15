@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { Answer, UserResponse } from '../types';
 import { questions } from '../data/questions';

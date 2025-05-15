@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import type { Question, Answer, SurveyResults } from '../types/survey';
-import type { UserContact, AssessmentData } from '../types/user';
+import type { AssessmentData } from '../types/user';
 import { Question as QuestionComponent } from '../components/Question';
 import { ContactForm } from '../components/ContactForm';
 

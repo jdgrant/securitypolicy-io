@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const Home: React.FC = () => {
+const Home = () => {
+  console.log('Home component rendering')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const navigate = useNavigate()
+
+  useEffect(() => {
+    console.log('Home component mounted')
+  }, [])
 
   return (
     <div className="min-h-screen">

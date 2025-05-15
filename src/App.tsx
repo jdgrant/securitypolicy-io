@@ -1,8 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import { Assessment } from './pages/Assessment'
+import { Suspense } from 'react'
 
 function App() {
+  console.log('App component rendering')
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
@@ -14,10 +16,13 @@ function App() {
           </div>
         </header>
         <main className="py-8">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/assessment" element={<Assessment />} />
-          </Routes>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/assessment" element={<Assessment />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </Suspense>
         </main>
       </div>
     </Router>

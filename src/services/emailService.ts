@@ -1,26 +1,22 @@
-import nodemailer from 'nodemailer';
+const API_URL = '/api';
 
-const transporter = nodemailer.createTransport({
-  host: import.meta.env.VITE_MAILGUN_SMTP_HOST,
-  port: 587,
-  secure: false,
-  auth: {
-    user: import.meta.env.VITE_MAILGUN_SMTP_USER,
-    pass: import.meta.env.VITE_MAILGUN_SMTP_PASS
-  }
-});
-
+// Simple email service for development
 export const sendEmail = async (to: string, subject: string, text: string) => {
   try {
-    const mailOptions = {
-      from: `Security Policy.io <${import.meta.env.VITE_MAILGUN_SMTP_USER}>`,
-      to,
-      subject,
-      text
-    };
+    const response = await fetch(`${API_URL}/send-email`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ to, subject, text }),
+    });
 
-    const info = await transporter.sendMail(mailOptions);
-    console.log('Email sent:', info.messageId);
+    const data = await response.json();
+    if (!data.success) {
+      throw new Error(data.error || 'Failed to send email');
+    }
+
+    console.log('Email sent:', data.messageId);
     return true;
   } catch (error) {
     console.error('Error sending email:', error);
@@ -29,25 +25,23 @@ export const sendEmail = async (to: string, subject: string, text: string) => {
 };
 
 export const sendVerificationEmail = async (email: string, verificationToken: string): Promise<void> => {
-  // In a real application, this would send an actual email
-  // For now, we'll simulate the email sending with a console log
-  console.log(`
-    To: ${email}
-    Subject: Verify your SecurityPolicy.io account
-    
-    Hello!
-    
-    Thank you for creating an account with SecurityPolicy.io. To access your security assessment results,
-    please verify your email address by entering the following code:
-    
-    ${verificationToken}
-    
-    If you did not create this account, please ignore this email.
-    
-    Best regards,
-    SecurityPolicy.io Team
-  `);
-  
-  // Simulate network delay
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  try {
+    const response = await fetch(`${API_URL}/send-verification`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, verificationToken }),
+    });
+
+    const data = await response.json();
+    if (!data.success) {
+      throw new Error(data.error || 'Failed to send verification email');
+    }
+
+    console.log('Verification email sent:', data.messageId);
+  } catch (error) {
+    console.error('Error sending verification email:', error);
+    throw error;
+  }
 }; 
