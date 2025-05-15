@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import type { Answer, UserResponse } from '../types';
 import { questions } from '../data/questions';
 
-const Start = () => {
+const Start: React.FC = () => {
   const navigate = useNavigate();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<UserResponse[]>([]);
