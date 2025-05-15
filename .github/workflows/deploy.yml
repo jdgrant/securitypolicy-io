@@ -8,6 +8,22 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
       - name: Trigger Vercel Deploy Hook
         run: |
-          curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_uK7aXeOr13PQFAhSuLAuvZBp2fQE/ofjPK9LNJO 
+          response=$(curl -s -w "\n%{http_code}" -X POST https://api.vercel.com/v1/integrations/deploy/prj_uK7aXeOr13PQFAhSuLAuvZBp2fQE/ofjPK9LNJO)
+          status_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+          
+          echo "Response body: $body"
+          echo "Status code: $status_code"
+          
+          if [ "$status_code" -ne 200 ] && [ "$status_code" -ne 201 ]; then
+            echo "Deployment trigger failed with status $status_code"
+            echo "Response: $body"
+            exit 1
+          fi
+          
+          echo "Deployment triggered successfully!" 
